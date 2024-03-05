@@ -1,15 +1,68 @@
+*{
+    box-sizing: border-box;
+}
 /* Elemnt Selector */
 /* ref colorhunt.co */
 body{
     background-color: #8E7AB5;
 }
 
-/* Class Selector */
+/* CSS Tablet */
+@media screen and (min-width: 600px) {
+    body{
+        background-color: yellow;
+    }
+
+    .col-sm-6{
+        width: 50%;
+        float: left;
+    }
+
+    .col-sm-12{
+        width: 100%;
+        float: left;
+    }
+
+} 
+
+/* CSS Desktop */
+@media screen and (min-width: 992px) {
+    body{
+        background-color: green;
+    }
+
+    
+    /* Class Selector */
 .col{
     width: 25%;
     background-color: yellow;
     float: left;
-} 
+    }
+
+.col-lg-4{
+    width: 33.33%;
+    background-color: yellow;
+    float: left;
+}
+
+.col-lg-6{
+    width: 50%;
+    float: left;
+}
+
+.col-3{
+    width: 33.33%;
+    background-color: lightgreen;
+    float: left;
+
+.col-7{
+        width: 66.67%;
+        background-color: lightblue;
+        float: left;
+    }
+}
+
+}
 
 .img-responsive{
     width: 100%;
@@ -38,22 +91,11 @@ body{
     display: table;
 }
 
-.col3{
-    width: 33.33%;
-    background-color: lightgreen;
-    float: left;
+
+
+
+
+.p1{
+    padding: 10px;
 }
 
-.col4{
-    float: left;
-    width: 66.67%;
-    background-color: lightblue;
-    text-align: center;
-}
-
-.col5{
-    width: 32.33%;
-    float: left;
-    background-color: lightblue;
-    text-align: center;
-}
